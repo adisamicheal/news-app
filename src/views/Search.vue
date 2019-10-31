@@ -61,7 +61,6 @@ export default {
         `https://newsapi.org/v2/everything?q=${this.search}&apiKey=58eec6a66ff546e19495bcb37f068f71`
       )
       .then(response => {
-        console.log(response);
         this.articles = response.data.articles;
       });
       }
